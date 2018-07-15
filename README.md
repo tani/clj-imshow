@@ -15,7 +15,7 @@ A implementation of OpenCV's imshow. This library supports OpenCV and JavaCV/Jav
     (cvx/imshow (Imgcodecs/imread "lena.png")) ;; When you give no title, title is "Untitled"
     ```
 
-- JavaCV/JAVACPP-Presets
+- JavaCV/JavaCPP-Presets
     ```clojure
     (import [org.bytedeco.javacpp.opencv_imgcodecs])
     (require '[clj-imshow.core :as cvx])
