@@ -6,8 +6,8 @@
            [javax.imageio ImageIO])
   (:use seesaw.core))
 
-(def imlabel (label))
-(def imframe (frame :content imlabel :on-close :dispose))
+(def ^:private imlabel (label))
+(def ^:private imframe (frame :content imlabel :on-close :dispose))
 
 (defn- toBufferedImage [image]
   (if (instance? Mat image)
@@ -20,6 +20,10 @@
       (opencv_imgcodecs/imencode ".png" image ba)
       (-> ba ByteArrayInputStream. ImageIO/read))))
 
+
+(defn showing? []
+  (.isShowing imframe))
+
 (defn imshow
   ([image]
    (imshow "Untitled" image))
@@ -30,5 +34,5 @@
            (.setIcon imlabel (icon bi)))
        (do (.setIcon imlabel (icon bi))
            (.setTitle imframe title)
-           (invoke-later (-> imframe pack! show!)))))))
+           (invoke-now (-> imframe pack! show!)))))))
   

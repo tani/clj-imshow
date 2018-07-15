@@ -13,6 +13,8 @@ A implementation of OpenCV's imshow. This library supports OpenCV and JavaCV/Jav
     
     (cvx/imshow "lena" (Imgcodecs/imread "lena.png"))
     (cvx/imshow (Imgcodecs/imread "lena.png")) ;; When you give no title, title is "Untitled"
+
+    (cvx/showing?) ;; If window is not showing, then it returns false.
     ```
 
 - JavaCV/JAVACPP-Presets
@@ -22,6 +24,7 @@ A implementation of OpenCV's imshow. This library supports OpenCV and JavaCV/Jav
     
     (cvx/imshow "lena" (opencv_imgcodecs/imread "lena.png"))
     (cvx/imshow (opencv_imgcodecs/imread "lena.png")) ;; When you give no title, title is "Untitled"
+    (cvx/showing?) ;; If window is not showing, then it returns false.
     ```
 
 ## License
