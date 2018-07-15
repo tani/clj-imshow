@@ -17,7 +17,7 @@ A implementation of OpenCV's imshow. This library supports OpenCV and JavaCV/Jav
     (cvx/showing?) ;; If window is not showing, then it returns false.
     ```
 
-- JavaCV/JAVACPP-Presets
+- JavaCV/JavaCPP-Presets
     ```clojure
     (import [org.bytedeco.javacpp.opencv_imgcodecs])
     (require '[clj-imshow.core :as cvx])
