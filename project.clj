@@ -3,6 +3,6 @@
   :url "https://github.com/asciian/clj-imshow"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[org.clojure/clojure "1.10.3"]
+  :dependencies [[org.clojure/clojure "1.11.1"]
                  [seesaw "1.5.0"]
                  [org.bytedeco/javacv-platform "1.5.5"]])
